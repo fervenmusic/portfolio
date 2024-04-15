@@ -1,0 +1,408 @@
+#above-the-fold {
+    position: relative;
+    background-color: #141D2F;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#background-layer-top {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    top: 120px;
+    max-width: 100%;
+}
+
+#above-the-fold-container {
+    display: flex;
+    z-index: 3;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+#iam-presentation {
+    transform: rotate(270deg);
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 54px;
+}
+
+.order-presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-presentation {
+    font-size: 73px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+#designation-presentation {
+    font-size: 57px;
+    font-weight: 400;
+    color: #9747FF;
+    margin-top: -5px;
+}
+
+#presentation-container {
+    display: flex;
+    margin-top: 130px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+
+}
+
+#button-presentation {
+    margin-top: 30px;
+}
+
+#infos-short {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-bottom: 70px;
+    z-index: 5;
+}
+
+#scroll-down {
+    transform: rotate(90deg);
+    font-size: 23px;
+    position: absolute;
+    right: 70px;
+    top: 670px;
+}
+
+#infos-short-mail {
+    font-size: 23px;
+    width: 400px;
+}
+
+#background-decliner {
+    position: absolute;
+    left: 0;
+    width: 100px;
+}
+
+#info-line {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#picture-main {
+    height: auto;
+    width: 740px;
+    aspect-ratio: auto;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 2000px) {
+    #picture-main {
+        padding-left: 170px;
+        width: 890px;
+    }
+
+    #background-layer-top {
+        top: 170px;
+
+    }
+
+    #above-the-fold-container {
+        padding-bottom: 80px;
+    }
+
+    #scroll-down {
+        top: 880px;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    #picture-main {
+        width: 640px;
+        margin-left: -45px;
+    }
+
+    #scroll-down {
+        top: 550px;
+    }
+}
+
+@media (max-width: 1425px) {
+    #picture-main {
+        width: 640px;
+        margin-left: -75px;
+        margin-left: -120px;
+
+    }
+}
+
+
+@media (max-width: 1325px) {
+    #picture-main {
+        margin-left: -120px;
+    }
+
+    #designation-presentation {
+        font-size: 35px;
+    }
+
+    #name-presentation {
+        font-size: 45px;
+        margin-bottom: -9px;
+    }
+
+    #iam-presentation {
+        font-size: 35px;
+        margin-top: 34px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #picture-main {
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #picture-main {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 1125px) {
+
+    #above-the-fold-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #picture-main {
+        width: 640px;
+        padding-right: 0px;
+        margin-left: 0 !important;
+    }
+
+    #scroll-down {
+        display: none;
+    }
+
+    #infos-short-mail {
+        display: none;
+    }
+
+    #background-layer-top {
+        top: 310px;
+    }
+
+    #presentation-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #above-the-fold-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #picture-main {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    #iam-presentation {
+        font-size: 46px;
+        margin-top: 43px;
+
+    }
+
+    #name-presentation {
+        font-size: 58px;
+        margin-top: 41px;
+    }
+
+    #designation-presentation {
+        font-size: 45px;
+    }
+
+    #scroll-down {
+        display: none;
+    }
+
+    #infos-short-mail {
+        display: none;
+    }
+
+    #background-layer-top {
+        top: 380px;
+    }
+
+    #presentation-container {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    #margin-top {
+        top: 350px;
+    }
+
+    #background-layer-top {
+        top: 350px;
+    }
+
+    #iam-presentation {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    #name-presentation {
+        font-size: 50px;
+    }
+
+    #designation-presentation {
+        font-size: 39px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #iam-presentation {
+        font-size: 33px;
+        margin-top: 41px;
+    }
+
+    #name-presentation {
+        font-size: 44px;
+    }
+
+    #designation-presentation {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #above-the-fold-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #picture-main {
+        width: 100%;
+        padding-right: 0px;
+
+    }
+
+    #iam-presentation {
+        font-size: 26px;
+        margin-top: 42px;
+    }
+
+    #name-presentation {
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+
+    #designation-presentation {
+        font-size: 22px;
+        margin-bottom: -3px;
+        margin-top: -1px;
+    }
+
+    #background-layer-top {
+        top: 310px;
+    }
+
+    #presentation-container {
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .presentation-container {
+        margin-top: 0px;
+    }
+
+    #background-layer-top {
+        top: 240px;
+    }
+
+    #infos-short {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    #background-layer-top {
+        top: 280px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    #background-layer-top {
+        top: 245px;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    #background-layer-top {
+        top: 210px;
+    }
+
+    #background-decliner {
+        width: 64px;
+    }
+
+    #infos-short {
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        padding-right: 20px;
+    }
+
+    #iam-presentation {
+        font-size: 22px;
+        margin-top: 42px;
+    }
+
+    #name-presentation {
+        font-size: 23px;
+        margin-bottom: 0px;
+    }
+
+    #designation-presentation {
+        font-size: 18px;
+        margin-bottom: -3px;
+        margin-top: -1px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #background-layer-top {
+        top: 185px;
+    }
+
+}

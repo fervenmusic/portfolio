@@ -1,0 +1,39 @@
+<div class="contact">
+    <div id="hidden-container-contact"></div>
+    <div id="contact-headline-optic">
+        <div id="contact-decliner"></div>
+        <h2 id="contact-headline">Contact</h2>
+    </div>
+    <div id="form-and-description">
+        <div id="contact-section">
+            <div id="contact-description">
+                <span id="small-headline-contact">Got a problem to solve?
+                </span> <br><br>
+                <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work. <br> <br>
+                    <b>Need a Frontend developer? Contact me!</b></span>
+            </div>
+        </div>   
+        <div id="form-with-button">
+            <form (submit)="sendMail()" #myForm id="contact-form">
+                <input #nameField id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
+                <span id="name-error" class="error-message">{{ nameError }}</span>
+                <input #emailField  id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
+                <span id="email-error" class="error-message">{{ emailError }}</span>
+                <textarea #messageField id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <span id="message-error" class="error-message">{{ messageError }}</span>
+                <div class="privacy-class">
+                    <img [src]="checkboxImage" id="checkbox-policy" (click)="toggleCheckbox()">
+                    <span>I've read the <a routerLink="/privacy-policy" style="color: #9747FF;">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                 </div>
+                
+                <button #sendButton id="button-form" [disabled]="!isChecked || nameError || emailError || messageError" type="submit" (click)="submitForm($event)">Send message!</button>
+                <span id="message-sent" *ngIf="isMessageSent">Message successfully sent.</span>
+            </form>             
+        </div>
+    </div>
+    <div id="position-arrow">
+        <a href="#top">
+            <img id="arrow-top" src="/assets/img/arrow-top.svg" alt="arrow-top">
+        </a>
+    </div>
+</div>

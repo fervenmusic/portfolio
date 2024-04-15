@@ -1,0 +1,18 @@
+#imprint {
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#contact-imprint {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    #imprint {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

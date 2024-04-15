@@ -1,0 +1,114 @@
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons-about-me {
+    height: 50px;
+    width: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    z-index: 5;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+.infos-about-me {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+#avatar {
+    height: 453px;
+    width: 453px;
+    border-radius: 50%;
+    border: solid green 4px;
+    margin-left: 35px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    z-index: 11;
+}
+
+#green-decliner {
+    width: 267px;
+    height: 4px;
+    background-color: green;
+    z-index: 2;
+}
+
+.about-me-introduction {
+    margin-bottom: 35px;
+}
+
+#background-shadow {
+    position: absolute;
+    right: 0;
+    top: 750px;
+    z-index: 2;
+    height: 500px;
+}
+
+#hidden-container-about-me {
+    position: relative;
+    left: 0;
+    top: -100px;
+}
+
+@media (max-width: 350px) {
+    #avatar {
+        display: none;
+    }
+
+    .about-me-container {
+        margin-top: 0;
+    }
+
+    .about-me-container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+
+@media (max-width: 1350px) {
+    #green-decliner {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #avatar {
+        display: none;
+        margin-left: 69px;
+    }
+
+    .about-me-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    #background-shadow {
+        top: 970px;
+    }
+
+    .icons-about-me {
+        padding-left: 0;
+    }
+}

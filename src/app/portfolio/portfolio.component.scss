@@ -1,0 +1,145 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 180px;
+}
+
+#right-decliner-portfolio {
+    background-color: #9747FF;
+    width: 36%;
+    height: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+#left-decliner-portfolio {
+    background-color: #9747FF;
+    width: 109px;
+    height: 4px;
+    position: absolute;
+    left: 29%;
+}
+
+#headline-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hidden-container-portfolio {
+    position: relative;
+    left: 0;
+    top: -60px;
+}
+
+@media (max-width: 1600px) {
+
+    #right-decliner-portfolio {
+        width: 30%;
+    }
+
+    #left-decliner-portfolio {
+        left: 23%;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    #right-decliner-portfolio {
+        width: 26%;
+    }
+
+    #left-decliner-portfolio {
+        left: 14%;
+    }
+
+    .portfolio-container {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 900px) {
+    #right-decliner-portfolio {
+        width: 32%;
+    }
+
+    #left-decliner-portfolio {
+        left: 27%;
+        width: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    #right-decliner-portfolio {
+        width: 28%;
+    }
+
+    #left-decliner-portfolio {
+        left: 22%;
+        width: 40px;
+    }
+
+    #description-portfilio-mobile {
+        margin-right: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    #right-decliner-portfolio {
+        width: 25%;
+    }
+
+    #left-decliner-portfolio {
+        left: 21%;
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    #right-decliner-portfolio {
+        width: 21%;
+    }
+
+    #left-decliner-portfolio {
+        left: 17%;
+        width: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #right-decliner-portfolio {
+        width: 16%;
+    }
+
+    #left-decliner-portfolio {
+        left: 13%;
+        width: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    #right-decliner-portfolio {
+        width: 13%;
+    }
+
+    #left-decliner-portfolio {
+        left: 9%;
+        width: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    #right-decliner-portfolio {
+        display: none;
+    }
+
+    #left-decliner-portfolio {
+        display: none;
+    }
+}

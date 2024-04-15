@@ -1,0 +1,16 @@
+<div id="header" class="header">
+    <a href="#top"><img id="main-logo" src="/assets/img/kevin.png" alt="logo-main"></a>
+    <menu class="menu">
+        <a href="#infos-short" class="menu-sections">About me</a>
+        <a href="#hidden-container-skills" class="menu-sections">Skills</a>
+        <a href="#hidden-container-portfolio" class="menu-sections">Portfolio</a>
+    </menu>
+    <img (click)="toggleMenu()" id="burger-menu" style="display: none;" src="/assets/img/burger-menu.svg"
+        alt="burger-menu">
+</div>
+<div id="mobile-nav" style="display: none;">
+    <a (click)="toggleMenu()" href="#hidden-container-about-me" class="mobile-nav-style">About me</a>
+    <a (click)="toggleMenu()" href="#my-skills" class="mobile-nav-style">Skills</a>
+    <a (click)="toggleMenu()" href="#hidden-container-portfolio" class="mobile-nav-style">Portfolio</a>
+    <a (click)="toggleMenu()" href="#hidden-container-contact" class="mobile-nav-style">Contact</a>
+</div>

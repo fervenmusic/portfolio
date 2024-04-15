@@ -1,1 +1,182 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    margin: 0;
+    color: white;
+    background-color: #141d2f;
+    scroll-behavior: smooth;
+
+}
+
+button {
+    background-color: #70E61C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: auto;
+    height: 58px;
+    border: none;
+    font-size: 23px;
+    font-weight: 400;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: 150ms;
+
+
+    &:hover {
+        background-color: #9747FF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        transform: scale(1.2);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    z-index: 2;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.button-live {
+    background-color: #9747FF;
+    cursor: pointer;
+    margin-right: 70px;
+
+    &:hover {
+        background-color: #9747FF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        transform: scale(1.2);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+
+}
+
+.button-github {
+    border: solid 1px #70E61C;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #70E61C;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        transform: scale(1.2);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #9747FF;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+h4 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #70E61C;
+    z-index: 2;
+}
+
+input {
+    width: 619px;
+    height: 50px;
+    background-color: #9747ff00;
+    color: white;
+    margin-bottom: 35px;
+    border: solid 2px #9747FF;
+    border-radius: 10px;
+    text-indent: 20px;
+
+
+    &:hover {
+        border: solid 2px #1CDAE6;
+
+    }
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'Poppins';
+}
+
+textarea::placeholder {
+    color: white;
+    font-family: 'Poppins';
+}
+
+#icons-footer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#burger-menu {
+    cursor: pointer;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 150ms;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// Responsive Settings
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 45px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+}
