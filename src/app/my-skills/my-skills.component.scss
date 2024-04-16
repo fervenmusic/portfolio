@@ -1,3 +1,7 @@
+button {
+    transition: 75ms;
+}
+
 .my-skills-container {
     padding-left: 120px;
     display: flex;
@@ -67,6 +71,7 @@
 
 #button-my-skills {
     width: 200px;
+    transition: 75ms;
 }
 
 #my-skills-shadow {
@@ -125,6 +130,7 @@
 
     #mobile-button-my-skills {
         display: flex !important;
+        justify-content: center;
         width: 185px;
         margin-right: 25px;
         z-index: 2;

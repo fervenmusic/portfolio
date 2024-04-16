@@ -2,20 +2,18 @@
 <div class="about-me-container">
     <div id="hidden-container-about-me"></div>
     <div class="about-me-section">
-        <h2 id="about-me">About me</h2>
-        <span class="about-me-introduction">Experienced 27-year-old front end developer from Germany, 
-            proficient in crafting dynamic web experiences using a blend of Angular, JavaScript, TypeScript, HTML,
-            CSS, and more. Collaborative team player skilled in project development, with a keen eye for detail and a 
-            passion for delivering exceptional user-centric designs.
+        <h2 id="about-me">{{ currentLanguage === 'english' ? 'About me' : 'Über mich'}}</h2>
+        <span class="about-me-introduction">{{ currentLanguage === 'english' ? 'Experienced 27-year-old front end developer from Germany, proficient in crafting dynamic web experiences using a blend of Angular, JavaScript, TypeScript, HTML, CSS, and more. Collaborative team player skilled in project development, with a keen eye for detail and a passion for delivering exceptional user-centric designs.' : 'Erfahrener 27-jähriger Frontend-Entwickler aus Deutschland, versiert in der Gestaltung dynamischer Web-Erlebnisse unter Verwendung einer Mischung aus Angular, JavaScript, TypeScript, HTML, CSS und mehr. Kollaborativer Teamplayer mit Fähigkeiten in der Projektentwicklung, mit einem scharfen Auge für Details und einer Leidenschaft für die Bereitstellung außergewöhnlicher benutzerzentrierter Designs.'}}
         </span>
         <div class="infos-about-me">
             <img class="icons-about-me" src="/assets/img/icon-light.svg" alt="">
-            <span>Always seeking new ways to innovate in web development, whether it's experimenting with design patterns or exploring emerging technologies.
+            <span>{{ currentLanguage === 'english' ? "Always seeking new ways to innovate in web development, whether it's experimenting with design patterns or exploring emerging technologies." : '
+                Immer auf der Suche nach neuen Wegen, um im Webentwicklungsbereich zu innovieren, sei es durch Experimentieren mit Designmustern oder Erforschen aufstrebender Technologien.' }} 
             </span>
         </div>
         <div class="infos-about-me">
             <img class="icons-about-me" src="/assets/img/icon-puzzle.svg" alt="">
-            <span id="skill-link">Outside coding, I enjoy unraveling complex puzzles, finding patterns, and exercising my problem-solving skills in various creative endeavors.
+            <span id="skill-link">{{ currentLanguage === 'english' ? "Outside coding, I enjoy unraveling complex puzzles, finding patterns, and exercising my problem-solving skills in various creative endeavors." : "Außerhalb des Programmierens genieße ich es, komplexe Rätsel zu lösen, Muster zu finden und meine Problemlösungsfähigkeiten bei verschiedenen kreativen Unternehmungen zu trainieren." }}
             </span>
         </div>
     </div>

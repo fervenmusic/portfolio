@@ -1,7 +1,7 @@
 <div id="my-skills" class="my-skills-container">
     <div id="hidden-container-skills"></div>
     <img id="my-skills-shadow" src="/assets/img/green-background-shadow.svg" alt="">
-    <button style="display: none;" id="mobile-button-my-skills">Get in touch</button>
+    <button style="display: none;" id="mobile-button-my-skills">{{ currentLanguage === 'english' ? 'Get in touch' : 'Kontakt'}}</button>
     <div class="programm-list">
         <img class="icons-skills" src="/assets/img/skills/angular.svg" alt="angular">
         <img class="icons-skills" src="/assets/img/skills/typescript.svg" alt="typescript">
@@ -16,15 +16,14 @@
     </div>
     <div class="my-skills-section">
         <div id="my-skills-with-decliner">
-            <h2 id="underline-my-skills">My skills</h2>
+            <h2 id="underline-my-skills">{{ currentLanguage === 'english' ? 'My skills' : 'Meine Fähigkeiten'}}</h2>
             <div id="purple-decliner"></div>
         </div>
         <div id="my-skills-description">
-            <span id="my-skills-text">I have gained experience in building projects with various front end technologies
-                and
-                concepts.</span>
+            <span id="my-skills-text">{{ currentLanguage === 'english' ? 'I have gained experience in building projects with various front end technologies and concepts.' : 'Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien gesammelt.'}}
+</span>
             <a href="#contact-headline">
-                <button id="button-my-skills">Get in touch</button>
+                <button id="button-my-skills">{{ currentLanguage === 'english' ? 'Get in touch' : 'Kontakt' }} </button>
             </a>
         </div>
     </div>

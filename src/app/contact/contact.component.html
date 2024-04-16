@@ -2,37 +2,42 @@
     <div id="hidden-container-contact"></div>
     <div id="contact-headline-optic">
         <div id="contact-decliner"></div>
-        <h2 id="contact-headline">Contact</h2>
+        <h2 id="contact-headline">{{ currentLanguage === 'english' ? 'Contact' : 'Kontakt'}}</h2>
     </div>
     <div id="form-and-description">
         <div id="contact-section">
             <div id="contact-description">
-                <span id="small-headline-contact">Got a problem to solve?
+                <span id="small-headline-contact">{{ currentLanguage === 'english' ? 'Got a problem to solve?' : '
+                    Hast du ein Problem zu lösen?'}}
                 </span> <br><br>
-                <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work. <br> <br>
-                    <b>Need a Frontend developer? Contact me!</b></span>
+                <span>{{ currentLanguage === 'english' ? 'Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.' : '
+                    Kontaktiere mich über dieses Formular. Ich bin daran interessiert, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.'}} <br> <br>
+                    <b>{{ currentLanguage === 'english' ? 'Need a Frontend developer? Contact me!' : '
+                        Brauchst du einen Frontend-Entwickler? Kontaktiere mich!' }}</b></span>
             </div>
         </div>   
         <div id="form-with-button">
             <form (submit)="sendMail()" #myForm id="contact-form">
-                <input #nameField id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
+                <input #nameField id="name" type="text" name="name" placeholder="{{ currentLanguage === 'english' ? 'Your name' : 'Dein Name' }}" required (input)="validateName($event)">
                 <span id="name-error" class="error-message">{{ nameError }}</span>
-                <input #emailField  id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
+                <input #emailField  id="email" type="email" name="email" placeholder="{{ currentLanguage === 'english' ? 'Your email address' : 'Deine E-Mail-Adresse' }}" required (input)="validateEmail($event)">
                 <span id="email-error" class="error-message">{{ emailError }}</span>
-                <textarea #messageField id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <textarea #messageField id="growable-input" name="message" placeholder="{{ currentLanguage === 'english' ? 'Your message' : 'Deine Nachricht' }}" required (input)="validateMessage($event)"></textarea>
                 <span id="message-error" class="error-message">{{ messageError }}</span>
                 <div class="privacy-class">
                     <img [src]="checkboxImage" id="checkbox-policy" (click)="toggleCheckbox()">
-                    <span>I've read the <a routerLink="/privacy-policy" style="color: #9747FF;">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                    <span>{{ currentLanguage === 'english' ? "I've read the " : 'Ich habe die ' }}<a routerLink="/privacy-policy" style="color: #9747FF;">{{ currentLanguage === 'english' ? "privacy policy " : 'Datenschutzerklärung ' }}</a>{{ currentLanguage === 'english' ? "and agree to the processing of my data as outlined." : '
+                        und stimme der Verarbeitung meiner Daten gemäß den Angaben zu.' }} </span>
                  </div>
-                
-                <button #sendButton id="button-form" [disabled]="!isChecked || nameError || emailError || messageError" type="submit" (click)="submitForm($event)">Send message!</button>
-                <span id="message-sent" *ngIf="isMessageSent">Message successfully sent.</span>
+                <div class="button-pos">
+                <button #sendButton id="button-form" [disabled]="!isChecked || nameError || emailError || messageError" type="submit" (click)="submitForm($event)">{{ currentLanguage === 'english' ? "Send message!" : 'Nachricht senden!' }}</button>
+                </div>
+                <span id="message-sent" *ngIf="isMessageSent">{{ currentLanguage === 'english' ? "Message successfully sent." : 'Nachricht erfolgreich gesendet.' }}</span>
             </form>             
         </div>
     </div>
     <div id="position-arrow">
-        <a href="#top">
+        <a (click)="scrollTo('top')">
             <img id="arrow-top" src="/assets/img/arrow-top.svg" alt="arrow-top">
         </a>
     </div>

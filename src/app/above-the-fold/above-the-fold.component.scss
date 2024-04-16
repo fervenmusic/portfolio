@@ -62,6 +62,7 @@
 
 #button-presentation {
     margin-top: 30px;
+    transition: 75ms;
 }
 
 #infos-short {
@@ -126,7 +127,7 @@
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1615px) {
     #picture-main {
         width: 640px;
         margin-left: -45px;
@@ -137,7 +138,7 @@
     }
 }
 
-@media (max-width: 1425px) {
+@media (max-width: 1470px) {
     #picture-main {
         width: 640px;
         margin-left: -75px;
@@ -147,7 +148,7 @@
 }
 
 
-@media (max-width: 1325px) {
+@media (max-width: 1395px) {
     #picture-main {
         margin-left: -120px;
     }
@@ -295,7 +296,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 525px) {
 
     #above-the-fold-container {
         flex-direction: column;

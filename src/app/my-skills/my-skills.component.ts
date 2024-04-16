@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language-service.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent {
+  currentLanguage = 'english';
 
+  constructor(private languageService: LanguageService) {
+    this.languageService.currentLanguage.subscribe(language => this.currentLanguage = language);
+  }
+
+  switchLanguage() {
+    this.languageService.switchLanguage();
+  }
 }

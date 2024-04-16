@@ -4,14 +4,14 @@
         <img id="picture-main" src="/assets/img/avatar-main.png" alt="picture-main">
         <div id="presentation-container">
             <div class="presentation">
-                <span id="iam-presentation">I am</span>
+                <span id="iam-presentation">{{ currentLanguage === 'english' ? 'I am' : 'Ich bin' }}</span>
                 <div class="order-presentation">
                     <h1 id="name-presentation">Kevin Horlitz</h1>
-                    <span id="designation-presentation">FRONTEND DEVELOPER</span>
+                    <span id="designation-presentation">{{ currentLanguage === 'english' ? 'FRONTEND DEVELOPER' : 'FRONTEND ENTWICKLER'}} </span>
                 </div>
             </div>
-            <a href="#contact-headline">
-                <button id="button-presentation">Let's talk!</button>
+            <a (click)="scrollTo('contact-headline')">
+                <button id="button-presentation">{{ currentLanguage === 'english' ? "Let's talk!" : 'Lass uns sprechen!'}}</button>
             </a>
         </div>
     </div>
@@ -27,6 +27,6 @@
             <a target=" _blank" href="https://www.linkedin.com/in/kevin-h-00791a278/"><img class="icon" src="/assets/img/icon-linkedin.png" alt="linkedin"></a>
             <span id="infos-short-mail">horlitzkevin@web.de</span>
         </div>
-        <div id="scroll-down">Scroll down →</div>
+        <div id="scroll-down">{{ currentLanguage === 'english' ? 'Scroll down →' : 'Scrolle runter →'}}</div>
     </div>
 </div>

@@ -1,10 +1,14 @@
+a {
+    cursor: pointer;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #141D2F;
     padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 60px;
     padding-top: 35px;
     padding-bottom: 35px;
     position: sticky;
@@ -12,6 +16,11 @@
     z-index: 100;
 
 } 
+
+.menu {
+    display: flex;
+    align-items: center;
+}
 
 .menu-sections {
     margin-right: 29px;
@@ -21,6 +30,29 @@
     &:hover {
         color: #70E61C;
     }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 0.5s ease-out;
+  }
+
+.language {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 75ms;
+}
+.language:hover {
+    transform: scale(1.1);
 }
 
 #main-logo {

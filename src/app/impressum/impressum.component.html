@@ -1,10 +1,9 @@
 <div id="imprint">
-    <h1>Imprint</h1>
+    <h1>{{ currentLanguage === 'english' ? 'Imprint' : 'Impressum' }}</h1>
 
-    <span>www.kevinhorlitz.com</span><br>
+    <span>www.horlitzdeveloper.de</span><br>
 
-    <span>Responsible for the content (according to § 55 Abs. 2 RStV):
-    </span> <br><br>
+    <span>{{ currentLanguage === 'english' ? 'Responsible for the content (according to § 55 Abs. 2 RStV):' : 'Inhaltlich verantwortlich (gemäß § 55 Abs. 2 RStV):' }}</span> <br><br>
 
     <div id="contact-imprint">
         <span> Kevin Horlitz</span>
@@ -13,40 +12,15 @@
         <span> Germany</span>
     </div>
 
-    <h3>Contact</h3><br>
+    <h3>{{ currentLanguage === 'english' ? 'Contact' : 'Kontakt' }}</h3><br>
     Email: horlitzkevin(at)web.de
 
-    <h3>Legal Information</h3><br>
-    <span>www.kevinhorlitz.com is a personal website and does not represent the views or opinions of any
-        organization.
-    </span>
+    <h3>{{ currentLanguage === 'english' ? 'Legal Information' : 'Rechtliche Informationen' }}</h3><br>
+    <span>{{ currentLanguage === 'english' ? 'www.kevinhorlitz.com is a personal website and does not represent the views or opinions of any organization.' : 'www.kevinhorlitz.com ist eine persönliche Website und repräsentiert nicht die Ansichten oder Meinungen von irgendeiner Organisation.' }}</span>
 
-    <h3>Disclaimer</h3><br>
-    <span>The information provided on this website is for general informational purposes only. While we strive to keep
-        the
-        information up to date and accurate, we make no representations or warranties of any kind, express or implied,
-        about
-        the completeness, accuracy, reliability, suitability, or availability with respect to the website or the
-        information, products, services, or related graphics contained on the website for any purpose. Any reliance you
-        place on such information is therefore strictly at your own risk. <br>
+    <h3>{{ currentLanguage === 'english' ? 'Disclaimer' : 'Haftungsausschluss' }}</h3><br>
+    <span>{{ currentLanguage === 'english' ? 'The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.' : 'Die auf dieser Website bereitgestellten Informationen dienen nur allgemeinen Informationszwecken. Obwohl wir uns bemühen, die Informationen aktuell und korrekt zu halten, geben wir keine Zusicherungen oder Gewährleistungen jeglicher Art, ausdrücklich oder stillschweigend, hinsichtlich der Vollständigkeit, Genauigkeit, Zuverlässigkeit, Eignung oder Verfügbarkeit in Bezug auf die Website oder die Informationen, Produkte, Dienstleistungen oder zugehörigen Grafiken auf der Website für irgendeinen Zweck ab. Jede Verlassenschaft auf diese Informationen erfolgt daher streng auf eigenes Risiko.' }}</span>
 
-        In no event will we be liable for any loss or damage, including without limitation, indirect or consequential
-        loss
-        or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in
-        connection
-        with, the use of this website. <br>
-
-        Through this website, you can visit other websites that are not under the control of [Your Website Name]. We
-        have no
-        control over the nature, content, and availability of those sites. The inclusion of any links does not
-        necessarily
-        imply a recommendation or endorse the views expressed within them.</span>
-
-    <h3>Copyright</h3> <br>
-    <span>All content, including text, images, and other media, on this website is the property of [Your Name] unless
-        otherwise stated. Unauthorized use and/or duplication of this material without express and written permission
-        from
-        the website's owner is strictly prohibited.
-
-    </span>
+    <h3>{{ currentLanguage === 'english' ? 'Copyright' : 'Urheberrecht' }}</h3> <br>
+    <span>{{ currentLanguage === 'english' ? 'All content, including text, images, and other media, on this website is the property of [Your Name] unless otherwise stated. Unauthorized use and/or duplication of this material without express and written permission from the website\'s owner is strictly prohibited.' : 'Alle Inhalte, einschließlich Text, Bilder und andere Medien, auf dieser Website sind Eigentum von [Your Name], sofern nicht anders angegeben. Unerlaubte Verwendung und/oder Vervielfältigung dieses Materials ohne ausdrückliche und schriftliche Erlaubnis des Eigentümers der Website ist strengstens untersagt.' }}</span>
 </div>

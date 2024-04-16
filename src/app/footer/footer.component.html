@@ -2,7 +2,7 @@
     <div id="container-footer">
         <div id="logo-impressum">
              <a href="#top"><img id="main-footer" src="/assets/img/kevin.png" alt="logo"></a>
-            <a id="imprint-link-button" routerLink="/impressum">Impressum</a>
+            <a id="imprint-link-button" routerLink="/impressum">{{ currentLanguage === 'english' ? 'Imprint' : 'Impressum' }}</a>
         </div>
         <span id="copyright">© Kevin Horlitz</span>
         <div id="icons-footer">
@@ -10,6 +10,6 @@
             <a target=" _blank" href="mailto:horlitzkevin@web.de"><img class="icon" src="/assets/img/icon-mail.png" alt="icon-mail"></a>
             <a target=" _blank" href="https://www.linkedin.com/in/kevin-h-00791a278/"><img class="icon" src="/assets/img/icon-linkedin.png" alt="icon-linkedin"></a>
         </div>
-        <a style="display: none;" id="responsive-impressum" routerLink="/impressum">Impressum</a>
+        <a style="display: none;" id="responsive-impressum" routerLink="/impressum">{{ currentLanguage === 'english' ? 'Imprint' : 'Impressum' }}</a>
     </div>
 </footer>

@@ -3,7 +3,6 @@
 ########### CONFIG ###############
 
 $recipient = 'horlitzkevin@web.de'; # Bitte hier deine E-Mail angeben
-$redirect = 'success.html';
 
 ########### CONFIG END ###########
 
@@ -53,7 +52,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $message .= "Message: " . $_POST['message'];
 
         mail($recipient, $subject, $message, $headers);
-        header("Location: " . $redirect); 
 
         break;
     default: //Reject any non POST or OPTIONS requests.

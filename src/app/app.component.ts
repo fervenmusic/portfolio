@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from './services/language-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  constructor(private languageService: LanguageService) { }
+
+  switchLanguage() {
+    this.languageService.switchLanguage();
+  }
 }

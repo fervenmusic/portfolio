@@ -32,8 +32,6 @@ button {
     font-size: 23px;
     font-weight: 400;
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-    transition: 150ms;
-
 
     &:hover {
         background-color: #9747FF;
@@ -41,7 +39,7 @@ button {
         padding-bottom: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition-property: transform;
         transition-duration: 500ms;
         transition-timing-function: ease;
@@ -67,12 +65,11 @@ span {
     margin-right: 70px;
 
     &:hover {
-        background-color: #9747FF;
+        background-color: #70E61C;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        transform: scale(1.2);
         transition-property: transform;
         transition-duration: 500ms;
         transition-timing-function: ease;
@@ -92,7 +89,6 @@ span {
         padding-bottom: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        transform: scale(1.2);
         transition-property: transform;
         transition-duration: 500ms;
         transition-timing-function: ease;

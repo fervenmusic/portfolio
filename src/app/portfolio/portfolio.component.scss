@@ -59,6 +59,12 @@
     .portfolio-container {
         padding-bottom: 90px;
     }
+
+    #description-portfolio-mobile {
+        margin-right: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 900px) {
@@ -80,12 +86,6 @@
     #left-decliner-portfolio {
         left: 22%;
         width: 40px;
-    }
-
-    #description-portfilio-mobile {
-        margin-right: 50px;
-        margin-left: 50px;
-        text-align: center;
     }
 }
 
